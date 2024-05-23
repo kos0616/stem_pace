@@ -1,0 +1,12 @@
+{
+  "@context": "http://www.schema.org",
+  "@type": "Organization",
+  "name": "Stem pace",
+  "url": "https://github.com/kos0616/stem_pace",
+  "logo": "https://kos0616.github.io/Budomistrz/_nuxt/brand.bd67d89e.svg",
+  "sameAs": ["https://github.com/kos0616/stem_pace"],
+  "image": "https://kos0616.github.io/Budomistrz/_nuxt/brand.bd67d89e.svg",
+  "description": "Print your own stem pace memo",
+  "contactPoint": {
+  }
+}
