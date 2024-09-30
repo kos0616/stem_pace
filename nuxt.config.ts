@@ -26,10 +26,6 @@ export default defineNuxtConfig({
       title: "Stem Pace",
       meta: [
         {
-          name: "google-site-verification",
-          content: "9NH4FcF9G5ehiPPiSLcRrzZTNZHjQjOonna5qftNi34",
-        },
-        {
           name: "description",
           content: "Print your own stem memo",
         },
