@@ -26,12 +26,16 @@ export default defineNuxtConfig({
       title: "Stem Pace",
       meta: [
         {
+          name: "google-site-verification",
+          content: "9NH4FcF9G5ehiPPiSLcRrzZTNZHjQjOonna5qftNi34",
+        },
+        {
           name: "description",
           content: "Print your own stem memo",
         },
         { name: "author", content: "kos0616" },
-        { name: "copyright", content: "Budomistrz" },
-        { name: "og:title", content: "Budomistrz" },
+        { name: "copyright", content: "Stem Pace" },
+        { name: "og:title", content: "Stem Pace" },
         {
           name: "og:description",
           content: "Print your own stem memo",
