@@ -3,28 +3,22 @@
   "short_name": "StemPace",
   "icons": [
     {
+      "//": "for Mac OS applicant",
+      "src": "/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
       "//": "iphone and most use",
       "src": "/apple-touch-icon.png",
       "sizes": "180x180",
       "type": "image/png"
     },
     {
-      "//": "Chrome APP & Windows desk & mobile, maskable to fit container",
+      "//": "Chrome APP & mobile, maskable to fit container",
       "src": "/maskable_icon_x192.png",
       "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "maskable"
-    },
-    {
-      "//": "for Windows desktop",
-      "src": "/pwa_icon.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    },
-    {
-      "//": "for Mac OS applicant",
-      "src": "/web-app-manifest-512x512.png",
-      "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
     }
