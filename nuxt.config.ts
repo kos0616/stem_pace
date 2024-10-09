@@ -90,7 +90,7 @@ export default defineNuxtConfig({
         {
           rel: "mask-icon",
           href: BASE_URL + "safari-pinned-tab.svg",
-          color: "#f97316",
+          color: "#aaaaaa",
         },
         { rel: "manifest", href: BASE_URL + "manifest.webmanifest" },
       ],
