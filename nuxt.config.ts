@@ -26,6 +26,10 @@ export default defineNuxtConfig({
       title: "Stem Pace",
       meta: [
         {
+          name: "apple-mobile-web-app-title",
+          content: "Stem Pace",
+        },
+        {
           name: "description",
           content: "Print your own stem memo",
         },
@@ -70,8 +74,17 @@ export default defineNuxtConfig({
         {
           rel: "icon",
           type: "image/png",
-          sizes: "16x16",
-          href: BASE_URL + "favicon-16x16.png",
+          sizes: "48x48",
+          href: BASE_URL + "favicon-48x48.png",
+        },
+        {
+          rel: "icon",
+          type: "image/svg+xml",
+          href: BASE_URL + "favicon.svg",
+        },
+        {
+          rel: "shortcut",
+          href: BASE_URL + "favicon.ico",
         },
         // mac OS safari tab icon color
         {
