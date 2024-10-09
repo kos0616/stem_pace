@@ -1,26 +1,31 @@
 {
-  "name": "Stem Pace",
+  "name": "StemPace",
   "short_name": "StemPace",
   "icons": [
+    {
+      "src": "/favicon2.svg",
+      "sizes": "640x512",
+      "type": "image/svg+xml"
+    },
+    {
+      "//": "iphone and most use",
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "//": "Chrome APP & Windows desk & mobile, maskable to fit container",
+      "src": "/maskable_icon_x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
     {
       "//": "for Mac OS applicant",
       "src": "/web-app-manifest-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
-    },
-    {
-      "//": "Chrome APP & Windows desk & mobile, maskable to fit container",
-      "src": "./maskable_icon_x192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "maskable"
-    },
-    {
-      "//": "iphone and most use",
-      "src": "./apple-touch-icon.png",
-      "sizes": "180x180",
-      "type": "image/png"
     }
   ],
   "start_url": "./",
