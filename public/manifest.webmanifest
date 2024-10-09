@@ -3,6 +3,12 @@
   "short_name": "StemPace",
   "icons": [
     {
+      "//": "for Mac OS, a no purpose icon is required",
+      "src": "./pwa_icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512"
+    },
+    {
       "src": "/web-app-manifest-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
@@ -32,12 +38,7 @@
       "sizes": "180x180",
       "type": "image/png"
     },
-    {
-      "//": "for Mac OS, a no purpose icon is required",
-      "src": "./pwa_icon.svg",
-      "type": "image/svg+xml",
-      "sizes": "512x512"
-    },
+
     {
       "//": "for light house pwa testing",
       "src": "./android-chrome-512x512.png",
