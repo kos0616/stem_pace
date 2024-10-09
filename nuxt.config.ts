@@ -68,12 +68,6 @@ export default defineNuxtConfig({
         {
           rel: "icon",
           type: "image/png",
-          sizes: "32x32",
-          href: BASE_URL + "favicon-32x32.png",
-        },
-        {
-          rel: "icon",
-          type: "image/png",
           sizes: "48x48",
           href: BASE_URL + "favicon-48x48.png",
         },
@@ -85,12 +79,6 @@ export default defineNuxtConfig({
         {
           rel: "shortcut",
           href: BASE_URL + "favicon.ico",
-        },
-        // mac OS safari tab icon color
-        {
-          rel: "mask-icon",
-          href: BASE_URL + "safari-pinned-tab.svg",
-          color: "#aaaaaa",
         },
         { rel: "manifest", href: BASE_URL + "manifest.webmanifest" },
       ],
