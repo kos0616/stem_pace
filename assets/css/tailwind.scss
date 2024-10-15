@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: #f9a826;
+  }
+
+  html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+  }
+  p {
+    @apply text-gray-600 text-sm;
+  }
+
+  ol > li {
+    @apply mb-2 text-gray-600 text-sm;
+  }
+
+  body {
+    @apply bg-[#f8fbfc] text-[#303030] transition-colors dark:bg-neutral-900 dark:text-zinc-400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .dec-h1::before {
+    content: "";
+    @apply block absolute -inset-2 -skew-y-3 z-10 bg-orange-500;
+  }
+
+  .dec-h1::after {
+    content: "";
+    @apply block absolute -inset-2 -skew-y-2 bg-gray-700/70 z-0 translate-x-2 translate-y-1;
+  }
+
+  .siteName {
+    font-family: "Covered By Your Grace", serif;
+    @apply italic;
+  }
+}

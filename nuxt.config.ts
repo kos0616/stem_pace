@@ -7,6 +7,7 @@ const BASE_URL = "/";
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
+  modules: ["@nuxtjs/tailwindcss"],
   runtimeConfig: {
     public: {
       clientVersion: pkg.version,
@@ -23,22 +24,23 @@ export default defineNuxtConfig({
         "data-version": pkg.version,
         "data-time": date,
       },
-      title: "Stem Pace",
+      title: "Stem Pace 配速小抄",
       meta: [
         {
           name: "apple-mobile-web-app-title",
-          content: "Stem Pace",
+          content: "Stem Pace 配速小抄",
         },
         {
           name: "description",
-          content: "Print your own stem memo",
+          content: "製作你的專屬公路車配速小抄。",
         },
         { name: "author", content: "kos0616" },
-        { name: "copyright", content: "Stem Pace" },
-        { name: "og:title", content: "Stem Pace" },
+        { name: "copyright", content: "kos0616" },
+        { name: "og:title", content: "Stem Pace 配速小抄" },
         {
           name: "og:description",
-          content: "Print your own stem memo",
+          content:
+            "線上編輯您的自行車配速表，發揮創意上色與修改。市民車手也能有PRO的筆記。",
         },
         /** 待測試 社群分享的連結如果是FB會怎樣 */
         { name: "og:url", content: "" },
