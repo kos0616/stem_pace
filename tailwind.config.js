@@ -2,7 +2,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: ["class", '[data-mode="dark"]'],
-  content: ["./index.html", "./**/*.{vue,js,ts,jsx,tsx}"],
+  content: ["./index.html", "./pages/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
