@@ -12,7 +12,7 @@
     scroll-behavior: smooth;
   }
   p {
-    @apply text-gray-600 text-sm;
+    @apply text-gray-600 text-sm dark:text-inherit;
   }
 
   ol > li {
@@ -23,6 +23,29 @@
     @apply bg-[#f8fbfc] text-[#303030] transition-colors dark:bg-neutral-900 dark:text-zinc-400;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply mb-1 font-bold;
+  }
+
+  h1 {
+    @apply text-3xl;
+  }
+  h2 {
+    @apply text-[150%];
+  }
+  h3 {
+    @apply text-[125%];
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply text-primary;
   }
 
   .dec-h1::before {

@@ -2,7 +2,7 @@
   <header
     class="sticky top-0 z-20 border-b border-zinc-300 bg-zinc-100 pt-2 px-2 pb-1 shadow-sm dark:border-zinc-600 dark:bg-zinc-800"
   >
-    <div class="container mx-auto flex">
+    <div class="container flex">
       <a href="/" class="mr-auto block">
         <strong class="flex gap-2">
           <img

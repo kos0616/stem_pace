@@ -1,9 +1,21 @@
-
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: ["class", '[data-mode="dark"]'],
   content: ["./index.html", "./pages/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
+    container: {
+      center: true,
+      screens: {
+        DEFAULT: "100%",
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+      },
+      padding: {
+        DEFAULT: "1rem",
+        md: "2rem",
+      },
+    },
     extend: {
       colors: {
         // primary 100 - 900
