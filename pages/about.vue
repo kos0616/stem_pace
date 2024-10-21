@@ -21,7 +21,7 @@
           :style="{
             'background-image': `url(${youtubeImg})`,
           }"
-          class="w-full h-auto aspect-video mb-3"
+          class="w-full h-auto aspect-video mb-3 mx-auto"
         ></lite-youtube>
 
         <div class="md:flex gap-4">
