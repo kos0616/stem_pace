@@ -80,7 +80,7 @@ const BRAND = config.public.BRAND_NAME;
 const isOpen = ref(false);
 </script>
 
-<style lang="postcss" scoped>
+<style lang="scss" scoped>
 .brand {
   @apply tracking-wide first-letter:text-xl first-letter:font-bold first-letter:text-primary-400;
 }
@@ -92,8 +92,12 @@ const isOpen = ref(false);
     @apply mt-2 block border-b border-primary-100 opacity-50 content-[''] dark:border-zinc-500 md:content-none;
   }
 
-  &:hover {
-    @apply text-primary dark:text-primary-100;
+  &:not(.router-link-exact-active) {
+    &:hover,
+    &:focus,
+    &:has(:focus) {
+      @apply dark:text-primary-100 dark:bg-transparent bg-primary rounded text-white;
+    }
   }
   &.router-link-exact-active {
     @apply text-primary-500;
