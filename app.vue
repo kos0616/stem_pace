@@ -1,8 +1,5 @@
 <template>
   <NuxtLayout>
-    {{ BRAND }}
-    {{ clientVersion }}
-    <h2 class="p-5 bg-teal-300">header</h2>
     <NuxtPage></NuxtPage>
   </NuxtLayout>
 </template>
