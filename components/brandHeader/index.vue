@@ -4,8 +4,8 @@
   >
     <div class="container flex">
       <a href="/" class="mr-auto block" title="Stem Pace">
-        <h1 class="dec-h1 text-[1rem] tracking-wider relative inline-block">
-          <span class="siteName relative text-white z-20">{{ BRAND }}</span>
+        <h1 class="dec-h1 tracking-wider relative inline-block">
+          <span class="siteName relative z-20">{{ BRAND }}</span>
         </h1>
       </a>
 
