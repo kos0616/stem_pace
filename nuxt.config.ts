@@ -53,7 +53,7 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: "zh-Hant",
         "data-version": pkg.version,
-        "data-time": date,
+        "data-update": date,
       },
       title: "Stem Pace 配速小抄",
       meta: [
