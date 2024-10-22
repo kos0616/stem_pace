@@ -1,5 +1,5 @@
 import pkg from "./package.json";
-const date = new Date().toLocaleTimeString();
+const date = new Date().toISOString();
 const BRAND_NAME = "Stem Pace";
 const BASE_URL = "/";
 
