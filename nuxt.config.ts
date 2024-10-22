@@ -109,6 +109,12 @@ export default defineNuxtConfig({
           rel: "shortcut",
           href: "/favicon.ico",
         },
+        {
+          as: "style",
+          rel: "preload",
+          href: "/css/icomoon/style.css",
+          onload: "this.onload=null;this.rel='stylesheet'",
+        },
         { rel: "manifest", href: "/manifest.webmanifest" },
       ],
     },

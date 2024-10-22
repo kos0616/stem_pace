@@ -1,5 +1,6 @@
 <template>
   <div>
+    <HomeCarousel></HomeCarousel>
     <div class="py-20">
       <article class="container">
         <h2 class="mb-10 text-primary">
@@ -13,12 +14,12 @@
 <script lang="ts" setup>
 useSeoMeta({ title: "" });
 
-// import {
-//   Carousel,
-//   HomeBrand,
-//   HomeAdvtange,
-//   HomeUserExperts,
-//   HomePrupose,
-//   ConcatUs,
-// } from "#components";
+import {
+  HomeCarousel,
+  //   HomeBrand,
+  //   HomeAdvtange,
+  //   HomeUserExperts,
+  //   HomePrupose,
+  //   ConcatUs,
+} from "#components";
 </script>
