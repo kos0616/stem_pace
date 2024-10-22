@@ -18,6 +18,10 @@ export default defineNuxtConfig({
   },
   css: ["@/assets/css/tailwind.scss"],
   modules: ["@nuxtjs/tailwindcss"],
+  plugins: [
+    { src: "~/plugins/vue-swiper", ssr: false },
+    // { src: "~/plugins/skeleton", ssr: false },
+  ],
   runtimeConfig: {
     public: {
       clientVersion: pkg.version,
