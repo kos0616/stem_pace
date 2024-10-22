@@ -29,6 +29,23 @@ export default defineNuxtConfig({
     // baseURL: BASE_URL,
     // buildAssetsDir: 'assets', // 這邊會影響到預設的 assets資料夾
     head: {
+      style: [
+        {
+          children: `
+        @font-face {
+          font-family: "Covered By Your Grace";
+          font-display: swap;
+          src: local("sans-serif"),
+          url("/font/CoveredByYourGrace-Regular.woff2")
+            format("woff2"),
+          url("/font/CoveredByYourGrace-Regular.woff")
+            format("woff"),
+          url("/font/CoveredByYourGrace-Regular.ttf")
+            format("truetype");
+        }
+        `,
+        },
+      ],
       htmlAttrs: {
         lang: "zh-Hant",
         "data-version": pkg.version,
@@ -54,7 +71,7 @@ export default defineNuxtConfig({
         },
         /** 待測試 社群分享的連結如果是FB會怎樣 */
         { name: "og:url", content: "" },
-        { name: "og:image", content: BASE_URL + "favicon.svg" },
+        { name: "og:image", content: "/favicon.svg" },
         // windows home screen app top bar color
         { name: "msapplication-TileColor", content: "#27272a" },
         {
@@ -68,31 +85,31 @@ export default defineNuxtConfig({
           content: "#27272A",
         },
       ],
-      script: [{ src: BASE_URL + "theme.js" }],
+      script: [{ src: "/theme.js" }],
       link: [
         {
           rel: "apple-touch-icon",
           sizes: "180x180",
-          href: BASE_URL + "apple-touch-icon.png",
+          href: "/apple-touch-icon.png",
         },
-        { rel: "apple-touch-startup-image", href: BASE_URL + "favicon.svg" },
-        { rel: "icon", href: BASE_URL + "favicon.svg" },
+        { rel: "apple-touch-startup-image", href: "/favicon.svg" },
+        { rel: "icon", href: "/favicon.svg" },
         {
           rel: "icon",
           type: "image/png",
           sizes: "48x48",
-          href: BASE_URL + "favicon-48x48.png",
+          href: "/favicon-48x48.png",
         },
         {
           rel: "icon",
           type: "image/svg+xml",
-          href: BASE_URL + "favicon.svg",
+          href: "/favicon.svg",
         },
         {
           rel: "shortcut",
-          href: BASE_URL + "favicon.ico",
+          href: "/favicon.ico",
         },
-        { rel: "manifest", href: BASE_URL + "manifest.webmanifest" },
+        { rel: "manifest", href: "/manifest.webmanifest" },
       ],
     },
   },

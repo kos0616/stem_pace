@@ -50,12 +50,22 @@
 
   .dec-h1::before {
     content: "";
-    @apply block absolute -inset-2 -skew-y-3 z-10 bg-orange-500;
+    inset: 0.1rem;
+    @apply block absolute -skew-y-3 z-10 bg-orange-500;
   }
 
   .dec-h1::after {
     content: "";
-    @apply block absolute -inset-2 -skew-y-2 bg-gray-700/70 z-0 translate-x-2 translate-y-1;
+    inset: 0.1rem;
+    @apply block absolute transition-all z-0;
+  }
+
+  .dec-h1:hover {
+    text-shadow: 0 0 0.5rem var(--color-primary);
+
+    &::after {
+      @apply -skew-y-2 bg-blue-500/70 translate-x-1 translate-y-1;
+    }
   }
 
   .siteName {

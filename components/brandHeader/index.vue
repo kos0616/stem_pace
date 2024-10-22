@@ -3,16 +3,10 @@
     class="sticky top-0 z-20 border-b border-zinc-300 bg-zinc-100 pt-2 px-2 pb-1 shadow-sm dark:border-zinc-600 dark:bg-zinc-800"
   >
     <div class="container flex">
-      <a href="/" class="mr-auto block">
-        <strong class="flex gap-2">
-          <img
-            src="@/public/favicon.svg"
-            alt="LOGO"
-            height="25px"
-            class="inline-block h-6"
-          />
-          <span class="text-lg">{{ BRAND }}</span>
-        </strong>
+      <a href="/" class="mr-auto block" title="Stem Pace">
+        <h1 class="dec-h1 text-[1rem] tracking-wider relative inline-block">
+          <span class="siteName relative text-white z-20">{{ BRAND }}</span>
+        </h1>
       </a>
 
       <div class="fixed right-0 top-0 z-50 md:hidden">
@@ -47,12 +41,16 @@
         :class="isOpen ? 'translate-x-0' : 'translate-x-full'"
         class="fixed bottom-0 right-0 top-0 z-10 flex w-full max-w-[150px] flex-col content-center gap-3 bg-zinc-200/95 pt-10 transition-all dark:bg-zinc-900/95 md:static md:w-auto md:max-w-full md:translate-x-0 md:flex-row md:bg-transparent md:pt-0 dark:md:bg-transparent"
       >
-        <NuxtLink @click="isOpen = false" class="home-nav-link px-3" to="/">
+        <NuxtLink
+          @click="isOpen = false"
+          class="home-nav-link flex items-center px-3"
+          to="/"
+        >
           Home
         </NuxtLink>
         <NuxtLink
           @click="isOpen = false"
-          class="home-nav-link px-3"
+          class="home-nav-link flex items-center px-3"
           to="/about"
         >
           About
