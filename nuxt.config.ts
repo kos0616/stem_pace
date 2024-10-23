@@ -120,6 +120,11 @@ export default defineNuxtConfig({
           onload: "this.onload=null;this.rel='stylesheet'",
         },
         { rel: "manifest", href: "/manifest.webmanifest" },
+        {
+          rel: "stylesheet",
+          as: "style",
+          href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css",
+        },
       ],
     },
   },
