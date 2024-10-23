@@ -2,12 +2,9 @@
   <div>
     <HomeBanner></HomeBanner>
     <div class="py-20">
-      <article class="container">
-        <HomeCarousel></HomeCarousel>
-        <h2 class="mb-10 text-primary">
-          With 20 Locations Worldwide, Over 1,000 Successful Projects
-        </h2>
-      </article>
+      <div class="container">
+        <HomeAboutSticker></HomeAboutSticker>
+      </div>
     </div>
   </div>
 </template>
@@ -17,7 +14,7 @@ useSeoMeta({ title: "" });
 
 import {
   HomeBanner,
-  HomeCarousel,
+  HomeAboutSticker,
   //   HomeBrand,
   //   HomeAdvtange,
   //   HomeUserExperts,

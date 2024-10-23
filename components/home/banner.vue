@@ -9,7 +9,7 @@
       <small class="text-gray-300">圖片來源</small>
     </a>
     <div
-      class="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 text-center"
+      class="text-gray-600 absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 text-center"
     >
       <div class="bg-slate-100 mt-5">
         <p

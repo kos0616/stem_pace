@@ -19,7 +19,7 @@
           :alt="`使用者應用 ${i}`"
           height="300"
           width="300"
-          class="object-cover aspect-square mx-auto"
+          class="object-cover aspect-square mx-auto rounded-lg"
         />
       </a>
     </swiper-slide>
