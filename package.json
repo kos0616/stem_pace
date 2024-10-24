@@ -12,6 +12,8 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "croppie": "^2.6.5",
+    "dayjs": "^1.11.13",
     "nuxt": "^3.13.0",
     "swiper": "8.4.7",
     "vue": "latest",
@@ -20,6 +22,7 @@
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.12.1",
+    "@types/croppie": "^2.6.4",
     "sass": "^1.79.5",
     "sass-loader": "^16.0.1"
   }

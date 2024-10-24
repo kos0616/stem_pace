@@ -50,6 +50,13 @@
         </NuxtLink>
         <NuxtLink
           @click="isOpen = false"
+          to="/download"
+          class="home-nav-link flex items-center px-3"
+        >
+          Download
+        </NuxtLink>
+        <NuxtLink
+          @click="isOpen = false"
           class="home-nav-link flex items-center px-3"
           to="/about"
         >
