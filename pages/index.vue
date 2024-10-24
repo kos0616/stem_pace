@@ -1,11 +1,8 @@
 <template>
   <div>
     <HomeBanner></HomeBanner>
-    <div class="py-20">
-      <div class="container">
-        <HomeAboutSticker></HomeAboutSticker>
-      </div>
-    </div>
+    <HomeAboutSticker></HomeAboutSticker>
+    <HomeIntro></HomeIntro>
   </div>
 </template>
 
@@ -15,6 +12,7 @@ useSeoMeta({ title: "" });
 import {
   HomeBanner,
   HomeAboutSticker,
+  HomeIntro,
   //   HomeBrand,
   //   HomeAdvtange,
   //   HomeUserExperts,
