@@ -1,6 +1,6 @@
 <template>
   <header
-    class="sticky top-0 z-20 border-b border-zinc-300 bg-zinc-100 pt-2 px-2 pb-1 shadow-sm dark:border-zinc-600 dark:bg-zinc-800"
+    class="progress fixed w-full top-0 z-20 border-b pt-2 px-2 pb-1 shadow-sm backdrop-blur-sm"
   >
     <div class="container flex">
       <a href="/" class="mr-auto block" title="Stem Pace">
@@ -91,7 +91,7 @@ const isOpen = ref(false);
 }
 
 .home-nav-link {
-  @apply transition-colors md:mx-1 md:p-1;
+  @apply transition-colors md:mx-1 md:py-1;
 
   &:after {
     @apply mt-2 block border-b border-primary-100 opacity-50 content-[''] dark:border-zinc-500 md:content-none;
@@ -120,5 +120,35 @@ const isOpen = ref(false);
 .v-enter-from,
 .v-leave-to {
   opacity: 0;
+}
+
+.progress {
+  animation: scaleProgress auto linear;
+  animation-timeline: scroll(root);
+}
+.progress:is([data-mode="dark"] *) {
+  animation: scaleProgressDark auto linear;
+  animation-timeline: scroll(root);
+}
+
+@keyframes scaleProgress {
+  0%,
+  10% {
+    @apply bg-zinc-100/50 border-zinc-400/75;
+  }
+  20%,
+  100% {
+    @apply bg-zinc-50 border-zinc-300/100;
+  }
+}
+@keyframes scaleProgressDark {
+  0%,
+  10% {
+    @apply bg-stone-700/50 border-zinc-800/50;
+  }
+  20%,
+  100% {
+    @apply bg-stone-900/100 border-zinc-800/100;
+  }
 }
 </style>
