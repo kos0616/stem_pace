@@ -9,7 +9,12 @@
         </li>
         <li>下載小抄 檔名為 <b>ride_plan.csv</b>。</li>
         <li>
-          <b class="bg-green-600 text-white px-1 rounded">匯入 ride_plan.csv</b>
+          <button
+            class="bg-green-600 font-bold text-white px-1 rounded"
+            @click="onUploadClicked"
+          >
+            匯入 ride_plan.csv
+          </button>
           匯入成功可在底下預覽與編輯。
         </li>
         <li>
@@ -67,6 +72,12 @@ export default defineComponent({
   setup(props, { emit }) {
     /** 區段 */
     const STEPS = ref<STEP[]>([]);
+
+    /** 觸發上傳表單 */
+    const onUploadClicked = () => {
+      const input = document.getElementById("uploader");
+      if (input) input.click();
+    };
 
     /** 讀取 .csv 檔案 並放在 STEPS */
     const handleUpload = (event: Event) => {
@@ -126,7 +137,7 @@ export default defineComponent({
       () => Array.isArray(STEPS.value) && STEPS.value.length > 0
     );
 
-    return { handleUpload, STEPS, isUpload };
+    return { handleUpload, STEPS, isUpload, onUploadClicked };
   },
 });
 </script>

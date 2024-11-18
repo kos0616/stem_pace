@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-white py-10 text-[#303030]">
     <div class="print:hidden sticky -top-px mb-3 w-100 z-20" ref="REF_MENU">
       <allEditor />
     </div>

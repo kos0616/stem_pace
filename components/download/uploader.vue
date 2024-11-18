@@ -16,6 +16,7 @@
       </template>
       <input
         @change="$emit('handleUpload', $event)"
+        id="uploader"
         type="file"
         accept=".csv"
         class="w-0 h-0 absolute opacity-0"
