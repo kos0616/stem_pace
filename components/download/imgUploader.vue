@@ -1,7 +1,7 @@
 <template>
   <div
     :class="{ 'z-10': CROP_INST }"
-    class="print:hidden text-center border border-gray-300 hover:border-gray-400 transition-colors rounded-md arrow bg-white"
+    class="print:hidden text-center border border-gray-300 hover:border-gray-400 transition-colors rounded-md arrow bg-white z-[1]"
   >
     <label
       v-if="!CROP_INST"

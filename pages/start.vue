@@ -5,7 +5,7 @@
       class="container py-20 print:hidden"
     ></DownloadTutorial>
     <DownloadPreview v-if="isUpload" :modelValue="STEPS"></DownloadPreview>
-    <div v-else class="container text-gray-800 border-gray-800">
+    <div v-else class="container text-gray-800 border-gray-800 pb-10">
       <div
         @click="onUploadClicked"
         role="button"
