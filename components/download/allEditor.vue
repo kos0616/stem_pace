@@ -41,7 +41,7 @@ export default defineComponent({
 
 <style lang="postcss">
 .is-sticky .menu-item {
-  @apply border-gray-300;
+  @apply border-gray-300 top-[3.4rem];
 }
 .menu-item {
   @apply bg-white hover:bg-slate-100 border-transparent last:border-r border-l border-y py-2 px-3 cursor-pointer first:rounded-bl last:rounded-br relative;
