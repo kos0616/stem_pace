@@ -20,17 +20,13 @@
             class="icon-scissors absolute left-0 bottom-0 translate-x-3 translate-y-1/2"
           />
         </p>
-        <a
+        <NuxtLink
           title="開始製作屬於你的配速小抄"
-          href="#intro"
+          to="start"
           class="group block p-3 hover:bg-gray-300/90 transition-colors"
         >
-          馬上開始
-          <i
-            class="icon-chevron-down block group-hover:animate-bounce"
-            aria-hidden="true"
-          />
-        </a>
+          馬上開始！
+        </NuxtLink>
       </div>
     </div>
   </header>

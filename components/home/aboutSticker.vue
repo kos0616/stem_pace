@@ -40,15 +40,18 @@
       <p class="text-gray-400">實際的使用者案例</p>
       <HomeCarousel></HomeCarousel>
 
-      <figure class="mx-auto max-w-xl flex items-center justify-between mt-16">
-        <figcaption class="text-2xl">
-          <i class="fas fa-triangle-exclamation fa-fw"></i>
-          錯誤的使用者案例
-
+      <div class="mx-auto max-w-xl flex items-center justify-between mt-16">
+        <div class="text-2xl">
+          <p>
+            <i class="fas fa-triangle-exclamation fa-fw"></i> 錯誤的使用者案例
+          </p>
+          <small class="text-gray-400">天啊，千萬別這樣做！</small>
           <div class="text-center mt-5">
-            <i class="fa-solid fa-arrow-right fa-fw fa-3x"></i>
+            <i
+              class="fa-solid fa-arrow-right fa-fw fa-3x hover:animate-bounce"
+            ></i>
           </div>
-        </figcaption>
+        </div>
         <a :href="errorImg" title="觀賞這藝術般的創作" target="_blank">
           <img
             :src="errorImg"
@@ -58,7 +61,7 @@
             width="300"
           />
         </a>
-      </figure>
+      </div>
     </div>
   </article>
 </template>
