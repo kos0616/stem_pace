@@ -1,12 +1,12 @@
 <template>
   <div class="flex min-h-[100dvh] flex-col">
-    <BrandHeader></BrandHeader>
+    <BrandHeader class="print:hidden"></BrandHeader>
 
     <main class="grow">
       <slot></slot>
     </main>
 
-    <footer class="bg-slate-200 py-10 text-center dark:bg-zinc-800 grid">
+    <footer class="bg-slate-200 py-10 text-center dark:bg-zinc-800 grid print:hidden">
       Copyright © 2024 {{ BRAND }}. All rights reserved.
       <small>{{ clientVersion }}</small>
     </footer>

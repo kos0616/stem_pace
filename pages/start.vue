@@ -1,8 +1,8 @@
 <template>
-  <div class="py-20 dar:bg-zinc-800">
+  <div class="dark:bg-zinc-800">
     <DownloadTutorial
       @upload="handleUploaded"
-      class="container pb-10"
+      class="container py-20 print:hidden"
     ></DownloadTutorial>
     <DownloadPreview v-if="isUpload" :modelValue="STEPS"></DownloadPreview>
     <div v-else class="container text-gray-800 border-gray-800">

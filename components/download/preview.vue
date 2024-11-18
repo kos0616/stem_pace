@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white py-10 text-[#303030]">
+  <div class="bg-white text-[#303030]">
     <div class="print:hidden sticky -top-px mb-3 w-100 z-20" ref="REF_MENU">
       <allEditor />
     </div>
@@ -7,7 +7,7 @@
       <!-- 全尺寸 -->
       <full :STEPS="STEPS" class="mb-5 hidden md:table print:table" />
       <div
-        class="grid grid-cols-2 md:flex print:flex gap-x-14 justify-center items-start"
+        class="grid grid-cols-2 md:flex print:flex gap-x-10 justify-center items-start"
       >
         <div>
           <type_A :STEPS="STEPS" class="mb-5" />
