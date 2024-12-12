@@ -39,7 +39,7 @@
 
       <nav
         :class="isOpen ? 'translate-x-0' : 'translate-x-full'"
-        class="fixed bottom-0 right-0 top-0 z-10 flex w-full max-w-[150px] flex-col content-center gap-3 bg-zinc-200/95 pt-10 transition-all dark:bg-zinc-900/95 md:static md:w-auto md:max-w-full md:translate-x-0 md:flex-row md:bg-transparent md:pt-0 dark:md:bg-transparent"
+        class="fixed right-0 top-0 z-10 flex w-full max-w-[150px] flex-col content-center gap-3 bg-zinc-200/95 pt-10 transition-all dark:bg-zinc-900/95 md:static md:w-auto md:max-w-full md:translate-x-0 md:flex-row md:bg-transparent md:pt-0 dark:md:bg-transparent"
       >
         <NuxtLink
           @click="isOpen = false"
