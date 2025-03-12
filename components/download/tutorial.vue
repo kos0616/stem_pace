@@ -16,7 +16,10 @@
             連結在此
           </a>
         </li>
-        <li>下載小抄，檔案格式為 *.csv，以西進武嶺為例，則檔名為 <b>西進武嶺_配速表.csv</b>。</li>
+        <li>
+          下載小抄，檔案格式為 *.csv，以西進武嶺為例，則檔名為
+          <b>西進武嶺_配速表.csv</b>。
+        </li>
         <li>
           <button
             class="bg-green-600 font-bold text-white px-1 rounded"
@@ -131,8 +134,8 @@ export default defineComponent({
 
     const formatCSV = (arr: string[][]): STEP[] => {
       return arr.map((step) => ({
-        start: step[0].split("-")[0],
-        end: step[0].split("-")[1],
+        start: extractPlaceNames(step[0]).start,
+        end: extractPlaceNames(step[0]).end,
         distance: step[1],
         cumulative_distance: step[2],
         wattage: step[3],
@@ -140,6 +143,20 @@ export default defineComponent({
         segment_time: step[5],
         cumulative_time: step[6],
       }));
+
+      function extractPlaceNames(str: string) {
+        const matchType_1 = /Section_\d+ (\S+?)_(\S+)/g.exec(str);
+        if (matchType_1 !== null) {
+          return { start: matchType_1[1], end: matchType_1[2] };
+        }
+
+        const matchType_2 = /(\S+?)-(\S+)/g.exec(str);
+        if (matchType_2 !== null) {
+          return { start: matchType_2[1], end: matchType_2[2] };
+        }
+
+        return { start: "", end: "" };
+      }
     };
 
     const isUpload = computed(
