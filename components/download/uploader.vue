@@ -4,7 +4,7 @@
   >
     <label
       class="md:text-lg text-center px-4 py-3 relative block cursor-pointer"
-      title="匯入 ride_plan.csv"
+      title="匯入 配速表.csv"
     >
       <template v-if="isUpload">
         <i class="icon-check text-2xl" aria-hidden="true" />
@@ -12,7 +12,7 @@
       </template>
       <template v-else>
         <i class="icon-file-text md:text-2xl" aria-hidden="true" />
-        匯入 ride_plan.csv
+        匯入 配速表.csv
       </template>
       <input
         @change="$emit('handleUpload', $event)"

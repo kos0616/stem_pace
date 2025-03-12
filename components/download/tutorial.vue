@@ -1,19 +1,28 @@
 <template>
-  <div class="md:flex gap-x-10 items-center justify-between px-5 xl:px-0">
+  <div class="md:flex gap-x-10 items-center justify-between">
     <article class="w-full sm:w-2/3 lg-w-1/2 mb-5 md:mb-0 mx-auto">
       <h2 class="text-2xl title">我該如何上手？</h2>
       <ol class="list-decimal pl-5">
         <li>
           前往
           <b>CT Yeh 公路車基地</b>，在單車路線頁選擇配速。
+          <a
+            href="https://www.ctyeh.com/routelist"
+            title="前往連結 CT Yeh 公路車基地(開新分頁)"
+            target="_blank"
+            class="underline text-primary"
+          >
+            <i class="fas fa-link fa-fw"></i>
+            連結在此
+          </a>
         </li>
-        <li>下載小抄 檔名為 <b>ride_plan.csv</b>。</li>
+        <li>下載小抄，檔案格式為 *.csv，以西進武嶺為例，則檔名為 <b>西進武嶺_配速表.csv</b>。</li>
         <li>
           <button
             class="bg-green-600 font-bold text-white px-1 rounded"
             @click="onUploadClicked"
           >
-            匯入 ride_plan.csv
+            匯入 配速表.csv
           </button>
           匯入成功可在底下預覽與編輯。
         </li>
@@ -36,7 +45,7 @@
           class="underline text-primary my-8 lg:mt-3 lg:mb-0 block"
           title="前往 CT Yeh 公路車基地"
         >
-          Get ride_plan.csv
+          Get 配速表.csv
         </a>
       </div>
       <div class="text-center">
