@@ -33,7 +33,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType, ref, watch } from "vue";
+import { defineComponent, type PropType, ref, watch } from "vue";
 import myCaption from "../myCaption.vue";
 import editor from "../tableEditor.vue";
 

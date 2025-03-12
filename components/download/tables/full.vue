@@ -64,7 +64,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType, ref, watch } from "vue";
+import { defineComponent, type PropType, ref, watch } from "vue";
 import DAY from "dayjs";
 import editor from "../tableEditor.vue";
 
