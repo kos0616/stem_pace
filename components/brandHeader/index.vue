@@ -50,10 +50,10 @@
         </NuxtLink>
         <NuxtLink
           @click="isOpen = false"
-          to="/start"
+          to="/intro"
           class="home-nav-link flex items-center px-3"
         >
-          Start
+          Intro
         </NuxtLink>
         <NuxtLink
           @click="isOpen = false"

@@ -30,14 +30,14 @@
     </div>
   </article>
   <article>
-    <div class="container py-20">
+    <div id="usuage" class="container py-20">
       <h2 class="mb-6 text-primary text-3xl">小抄怎麼用？</h2>
       <div class="text-xl text-gray-400">
         <p>
           只要列印下來，以護貝機或者透明膠帶做一層簡易的防水，接著貼在龍頭或者上管處即可。
         </p>
       </div>
-      <p class="text-gray-400">實際的使用者案例</p>
+      <p class="text-gray-400">實際的使用者安裝範例</p>
       <HomeCarousel></HomeCarousel>
 
       <div class="mx-auto max-w-xl flex items-center justify-between mt-16">

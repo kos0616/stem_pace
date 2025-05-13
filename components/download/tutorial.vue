@@ -5,7 +5,7 @@
       <ol class="list-decimal pl-5">
         <li>
           前往
-          <b>CT Yeh 公路車基地</b>，在單車路線頁選擇配速。
+          <b>CT Yeh 公路車基地</b>，選擇路線配速。
           <a
             href="https://www.ctyeh.com/routelist"
             title="前往連結 CT Yeh 公路車基地(開新分頁)"
@@ -31,9 +31,19 @@
         </li>
         <li>
           <b class="bg-blue-500 text-white px-1 rounded">列印小抄</b>
-          取得您獨一無二的配速表，或是上傳至 7-11 雲端列印。
+          取得您獨一無二的配速表，可自行列印或是上傳至超商雲端列印。
         </li>
-        <li>列印後剪下，經護貝或用膠帶黏貼正反兩面即可防水。</li>
+        <li>
+          列印後剪下，經護貝或用膠帶黏貼正反兩面即可防水。
+
+          <NuxtLink
+            class="underline text-primary"
+            to="/intro#usuage"
+            target="_blank"
+          >
+            小抄怎麼用?
+          </NuxtLink>
+        </li>
       </ol>
     </article>
 
@@ -48,7 +58,7 @@
           class="underline text-primary my-8 lg:mt-3 lg:mb-0 block"
           title="前往 CT Yeh 公路車基地"
         >
-          Get 配速表.csv
+          取得配速表
         </a>
       </div>
       <div class="text-center">
@@ -69,6 +79,14 @@
           title="使用 7-11 雲端列印"
         >
           7-11 雲端列印
+        </a>
+        <a
+          href="https://print.famiport.com.tw/"
+          target="_blank"
+          class="underline text-primary my-8 lg:mt-3 lg:mb-0 block"
+          title="使用全家雲端列印"
+        >
+          全家雲端列印
         </a>
       </div>
     </div>
