@@ -3,10 +3,9 @@
   "@type": "Organization",
   "name": "Stem pace",
   "url": "https://github.com/kos0616/stem_pace",
-  "logo": "https://kos0616.github.io/Budomistrz/_nuxt/brand.bd67d89e.svg",
+  "logo": "https://stem-pace.pages.dev/favicon.svg",
   "sameAs": ["https://github.com/kos0616/stem_pace"],
-  "image": "https://kos0616.github.io/Budomistrz/_nuxt/brand.bd67d89e.svg",
+  "image": "https://stem-pace.pages.dev/favicon.svg",
   "description": "Print your own stem pace memo",
-  "contactPoint": {
-  }
+  "contactPoint": {}
 }
