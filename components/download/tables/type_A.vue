@@ -27,7 +27,7 @@
         </tr>
 
         <tr @mouseover="active = i">
-          <td>{{ step.cumulative_time || "00:00" }}</td>
+          <td>{{ step.arrival_time || step.cumulative_time || "00:00" }}</td>
           <td class="text-right">
             {{ step.average_speed || "0" }}<small>k/h</small>
           </td>

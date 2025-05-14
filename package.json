@@ -1,12 +1,12 @@
 {
   "name": "stem_pace",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "private": true,
   "type": "module",
   "scripts": {
     "build": "NITRO_PRESET=cloudflare-pages nuxt build",
     "#build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "nuxt dev --host",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"

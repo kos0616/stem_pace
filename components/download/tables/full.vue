@@ -11,6 +11,7 @@
         <th>累積</th>
         <th>配瓦</th>
         <th>均速</th>
+        <th v-if="MY_STEPS[0].arrival_time">到達時間</th>
         <th>區段時間</th>
         <th>累積時間</th>
       </tr>
@@ -38,6 +39,9 @@
         </td>
         <td class="text-right font-bold">
           {{ step.average_speed || "0" }}<small>k/h</small>
+        </td>
+        <td v-if="step.arrival_time" class="text-center">
+          {{ step.arrival_time }}
         </td>
         <td class="text-center">{{ step.segment_time || "00:00" }}</td>
         <td class="text-center relative">

@@ -7,13 +7,49 @@
     <button title="變更文字大小" @click="changeFontSize" class="menu-item">
       <i class="fa-solid fa-text-height"></i>
     </button>
+    <button
+      v-if="!setDepartureTime"
+      @click="setDepartureTime = !setDepartureTime"
+      title="出發時間設定"
+      type="button"
+      class="menu-item"
+    >
+      <i class="fa-solid fa-stopwatch"></i>
+    </button>
+    <div v-else class="menu-item flex gap-2">
+      <button
+        @click="
+          setDepartureTime = false;
+          handleDepartureTime(null);
+        "
+        title="出發時間設定"
+        type="button"
+      >
+        <i class="fa-solid fa-stopwatch"></i>
+      </button>
+      <label for="departureTime">
+        出發時間
+        <select
+          @change="handleDepartureTime($event.target.value)"
+          v-if="setDepartureTime"
+          id="departureTime"
+        >
+          <option value="">無</option>
+          <option value="06:00">06:00</option>
+          <option value="05:30">05:30</option>
+          <option value="05:00">05:00</option>
+        </select>
+      </label>
+    </div>
   </nav>
 </template>
 <script lang="ts">
 import { defineComponent, ref } from "vue";
 
 export default defineComponent({
-  setup() {
+  setup(_, { emit }) {
+    const setDepartureTime = ref(false);
+
     const color = ref("");
 
     const changeColor = (e: Event) => {
@@ -34,7 +70,19 @@ export default defineComponent({
       dom.style.fontSize = SIZE[activeSize.value];
     };
 
-    return { color, changeFontSize, changeColor };
+    const handleDepartureTime = (time: string | null) => {
+      emit("departureTime", time);
+    };
+
+    return {
+      color,
+      changeFontSize,
+      changeColor,
+      setDepartureTime,
+      activeSize,
+      setDepartureTime,
+      handleDepartureTime,
+    };
   },
 });
 </script>

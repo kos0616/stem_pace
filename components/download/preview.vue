@@ -1,25 +1,29 @@
 <template>
   <div class="bg-white text-[#303030]">
     <div class="print:hidden sticky -top-px mb-3 w-100 z-10" ref="REF_MENU">
-      <allEditor />
+      <allEditor @departureTime="handleDepartureTime" />
     </div>
     <div id="printer">
       <!-- 全尺寸 -->
-      <full :STEPS="STEPS" class="mb-5 hidden md:table print:table" />
+      <full
+        :STEPS="STEPS"
+        class="mb-5 hidden md:table print:table"
+        :departureTime="departureTime"
+      />
       <div
         class="grid grid-cols-2 md:flex print:flex gap-x-10 justify-center items-start"
       >
         <div>
-          <type_A :STEPS="STEPS" class="mb-5" />
+          <type_A :STEPS="STEPS" class="mb-5" :departureTime="departureTime" />
         </div>
         <div>
-          <type_A2 :STEPS="STEPS" class="mb-5" />
+          <type_A2 :STEPS="STEPS" class="mb-5" :departureTime="departureTime" />
         </div>
         <div>
-          <type_B :STEPS="STEPS" />
+          <type_B :STEPS="STEPS" :departureTime="departureTime" />
         </div>
         <div>
-          <type_B2 :STEPS="STEPS" />
+          <type_B2 :STEPS="STEPS" :departureTime="departureTime" />
         </div>
       </div>
     </div>
@@ -48,6 +52,7 @@ import type_A2 from "./tables/type_A2.vue";
 import type_B from "./tables/type_B.vue";
 import type_B2 from "./tables/type_B2.vue";
 import allEditor from "./allEditor.vue";
+import DAY from "dayjs";
 
 export default defineComponent({
   name: "print preview",
@@ -87,7 +92,21 @@ export default defineComponent({
         segment_time: showTimer(obj.segment_time),
         /** 累計時間 */
         cumulative_time: showTimer(obj.cumulative_time),
+        /** 預估到達時間 */
+        arrival_time: addDepartureTime(obj.cumulative_time),
       }));
+
+      function addDepartureTime(time: string | null) {
+        if (!time || !departureTime.value) return "";
+        const [hour_S, minute_S] = departureTime.value.split(":").map(Number);
+        const [hour, minute] = time.split(":").map(Number);
+
+        const startTime = DAY()
+          .hour(hour_S + hour)
+          .minute(minute_S + minute);
+
+        return startTime.format("HH:mm");
+      }
     });
 
     /** 簡化時間的顯示 */
@@ -109,11 +128,24 @@ export default defineComponent({
       observer.observe(el);
     };
 
+    const departureTime = ref<string | null>(null);
+
+    /** 取得出發時間 */
+    const handleDepartureTime = (time: string | null) => {
+      departureTime.value = time;
+    };
+
     onMounted(() => {
       initSticky();
     });
 
-    return { STEPS, formatPlaceName, REF_MENU };
+    return {
+      STEPS,
+      formatPlaceName,
+      REF_MENU,
+      handleDepartureTime,
+      departureTime,
+    };
   },
 });
 </script>

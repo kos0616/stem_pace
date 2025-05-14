@@ -19,7 +19,7 @@
             {{ step.average_speed || "0" }}<small>k/h</small>
           </td>
           <td class="relative">
-            {{ step.cumulative_time || "00:00" }}
+            {{ step.arrival_time || step.cumulative_time || "00:00" }}
             <editor
               v-if="active === i"
               @add="MY_STEPS.splice(i, 0, step)"
