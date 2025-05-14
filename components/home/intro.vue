@@ -54,11 +54,11 @@
     <div class="text-center py-10">
       <NuxtLink
         title="開始製作屬於你的配速小抄"
-        to="start"
-        class="text-2xl bg-primary text-gray-600 px-5 py-3 rounded-lg hover:bg-primary-600 transition-colors hover:text-gray-900"
+        to="/"
+        class="font-bold text-2xl bg-primary text-gray-700 px-5 py-3 rounded-lg hover:bg-primary-300 transition-colors hover:text-gray-900"
         style="
           box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5),
-            -1px -1px 7px rgba(255, 255, 255, 0.5);
+            -1px -1px 4px -1px rgba(200, 200, 200, 0.7);
         "
       >
         START

@@ -9,10 +9,10 @@
         </h1>
       </a>
 
-      <div class="fixed right-0 top-0 z-50 md:hidden">
+      <div class="fixed right-2 top-1 z-50 md:hidden">
         <button
           @click="isOpen = !isOpen"
-          class="relative h-8 w-8 focus:outline-none"
+          class="relative h-[42px] w-[42px] focus:outline-none"
         >
           <span class="sr-only">isOpen main menu</span>
           <div
@@ -38,12 +38,12 @@
       </div>
 
       <nav
-        :class="isOpen ? 'translate-x-0' : 'translate-x-full'"
-        class="fixed right-0 top-0 z-10 flex w-full max-w-[150px] flex-col content-center gap-3 bg-zinc-200/95 pt-10 transition-all dark:bg-zinc-900/95 md:static md:w-auto md:max-w-full md:translate-x-0 md:flex-row md:bg-transparent md:pt-0 dark:md:bg-transparent"
+        :class="isOpen ? 'max-h-[200px] !p-0' : 'max-h-0 !p-0'"
+        class="fixed right-0 top-[55px] md:max-h-none overflow-auto z-10 flex w-full flex-col content-center gap-x-3 bg-zinc-200/95 py-5 transition-[max-height] duration-500 ease-in-out dark:bg-zinc-900/95 md:static md:w-auto md:max-w-full md:translate-x-0 md:flex-row md:bg-transparent md:pt-0 dark:md:bg-transparent"
       >
         <NuxtLink
           @click="isOpen = false"
-          class="home-nav-link flex items-center px-3"
+          class="home-nav-link flex items-center px-3 py-2 border-b border-zinc-600 md:border-0"
           to="/"
         >
           Home
@@ -51,19 +51,19 @@
         <NuxtLink
           @click="isOpen = false"
           to="/intro"
-          class="home-nav-link flex items-center px-3"
+          class="home-nav-link flex items-center px-3 py-2 border-b border-zinc-600 md:border-0"
         >
           Intro
         </NuxtLink>
         <NuxtLink
           @click="isOpen = false"
-          class="home-nav-link flex items-center px-3"
+          class="home-nav-link flex items-center px-3 py-2 border-b border-zinc-600 md:border-0"
           to="/about"
         >
           About
         </NuxtLink>
 
-        <SwitchDarkMode class="home-nav-link px-3"></SwitchDarkMode>
+        <SwitchDarkMode class="home-nav-link px-3 py-2"></SwitchDarkMode>
       </nav>
       <Transition>
         <div
