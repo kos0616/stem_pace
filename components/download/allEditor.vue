@@ -80,7 +80,6 @@ export default defineComponent({
       changeColor,
       setDepartureTime,
       activeSize,
-      setDepartureTime,
       handleDepartureTime,
     };
   },

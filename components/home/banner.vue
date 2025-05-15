@@ -22,7 +22,7 @@
         </p>
         <NuxtLink
           title="開始製作屬於你的配速小抄"
-          to="start"
+          to="/"
           class="group block p-3 hover:bg-gray-300/90 transition-colors"
         >
           馬上開始！

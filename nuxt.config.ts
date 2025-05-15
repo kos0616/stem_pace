@@ -17,7 +17,10 @@ export default defineNuxtConfig({
     },
   },
   css: ["@/assets/css/tailwind.scss"],
-  modules: ["@nuxtjs/tailwindcss"],
+  modules: ["@nuxtjs/tailwindcss", "nuxt-gtag"],
+  gtag: {
+    id: "G-FL85ZTDBFX",
+  },
   plugins: [
     { src: "~/plugins/vue-swiper", ssr: false },
     // { src: "~/plugins/skeleton", ssr: false },
